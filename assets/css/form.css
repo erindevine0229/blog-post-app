@@ -1,0 +1,97 @@
+:root {
+    --text: #000000;
+    --background: #ffffff;   
+} 
+
+* {
+    font-family: Arial, "Times New Roman", sans-serif; 
+}
+
+body{
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding-bottom: 60px;
+    border-bottom: 12px double var(--text);
+}
+
+#toggle-mode {
+    border: none;
+    background-color: var(--background);
+    float: right;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+
+}
+
+#main-icon {
+    display: flex;
+    width: 50%;
+    height: 800px;
+    justify-content: center;
+}
+
+#main-icon img {
+    height: 500px;
+    width: auto;
+    position: relative;
+    align-self: center;
+}
+
+#main-icon h1 {
+    font-size: 50px;
+    color: var(--background);
+    text-shadow: 2px 2px var(--text);
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    justify-content: start;
+
+} 
+
+#entry-form {
+    width: 50%;
+    height: 800px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-left: 12px double var(--text);
+}
+
+#entry-form h2 {
+    font-size: 30px;
+    color: var(--text);
+    font-weight: 900;
+    text-align: center;
+    align-self: center;
+   justify-content: center;
+}
+
+#entry-form  h3 {
+    text-align: center;
+    align-self: flex-start;
+   justify-content: center;
+   margin: 10px 30px;
+   color: var(--text);
+   font-weight: 200;
+   font-size: 15px;
+}
+
+input {
+    margin
+    
+    : 10px 30px;
+}
+
+#submit-btn {
+    color: var(--background);
+    background-color: var(--text);
+    padding:5px;
+    margin: 30px;
+}

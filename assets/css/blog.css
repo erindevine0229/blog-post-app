@@ -1,0 +1,115 @@
+:root {
+    --text: #000000;
+    --background: #ffffff;   
+}
+
+
+* {
+    font-family: Arial, "Times New Roman", sans-serif; 
+}
+
+body{
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding-bottom: 0px;
+    border-bottom: 12px double var(--text);
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 23px;
+    color: var(--text);
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-right: 77%;
+    justify-content: space-between;
+}
+
+#back-button {
+    text-wrap: wrap;
+    color: var(--background);
+    background-color: var(--text);
+    border-radius: 3px;
+    margin-right: 0%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#toggle-mode {
+    border: none;
+    background-color: var(--background);
+    padding: 10px;
+    margin-right: 0%;
+    
+}
+
+
+.blog-boxes {
+    height: 200px;
+    width: auto;
+    border: 1.5px solid var(--text);
+    margin: 10px 5px;
+    border-radius: 3px;
+}
+
+.blog-boxes h2 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--text);
+    padding-right: 400px;
+    margin-left: 15px;
+    margin-bottom: 30px;;
+}
+
+.blog-boxes p {
+    color: var(--text);
+    font-size: 15px;
+    margin-left: 15px;
+    
+}
+
+.blog-boxes h3 {
+    font-size: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+
+
+
+footer {
+    border-top: 12px double var(--text);
+}
+
+
+footer h2 {
+    color: var(--text);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    color: var(--text);
+    list-style: none;
+    float: left;
+    margin-left: 0px;
+    margin-bottom:5px;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
