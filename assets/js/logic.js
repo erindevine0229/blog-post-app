@@ -1,10 +1,9 @@
-
+// Controls light and dark mode by assigning CSS via root styling
 let lightMode = true;
 
 const toggleButton = document.getElementById('toggle-mode');
 
-const changeMode = function (event) {
-    event.preventDefault();
+const changeMode = function () {
 
     if (lightMode) {
         document.body.classList.add('dark-mode');
@@ -20,4 +19,5 @@ const changeMode = function (event) {
    
 };
 
+// targets the icon for toggling between light and dark
 toggleButton.addEventListener('click', changeMode);

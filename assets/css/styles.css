@@ -1,5 +1,5 @@
 
-
+/* Targets the :root to change switch from light to dark mode styling */
 .dark-mode {
     
     --text: #ffffff;

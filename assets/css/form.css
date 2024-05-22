@@ -1,3 +1,5 @@
+
+/* Targets the text and background coloring in the root so this can easily be manipulated to cah ge light to dark mode */
 :root {
     --text: #000000;
     --background: #ffffff;   
@@ -13,11 +15,13 @@ body{
     margin: 0px;
 }
 
+/* Creates the top border */
 header {
     padding-bottom: 60px;
     border-bottom: 12px double var(--text);
 }
 
+/* Formats the icon used to toggle between dark/light mode */
 #toggle-mode {
     border: none;
     background-color: var(--background);
@@ -30,6 +34,7 @@ main {
 
 }
 
+/* Styling for the My First Blog icon to the left of webpage */
 #main-icon {
     display: flex;
     width: 50%;
@@ -55,6 +60,7 @@ main {
 
 } 
 
+/* Styles the form on the right side of the page and creates the border between left and right */
 #entry-form {
     width: 50%;
     height: 800px;
@@ -89,6 +95,8 @@ input {
     : 10px 30px;
 }
 
+
+/* Styles the Submission button */
 #submit-btn {
     color: var(--background);
     background-color: var(--text);

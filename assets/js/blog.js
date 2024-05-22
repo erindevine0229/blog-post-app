@@ -1,14 +1,20 @@
 
+
+// Gives functionality to the back button to navigate back to index.html
+const backButton = document.getElementById("back-button");
+backButton.addEventListener("click", function() {
+        document.location.href = "index.html";
+    });
+
 // Gets array from local storage and converts back to objects via JSON parse
 const storedpostsArray = localStorage.getItem("Blog Posts");
 const postsArray = JSON.parse(storedpostsArray);
 
 
-// Creates new blog post in the blog browser page
+// Creates new blog post in the blog browser page by accessing each item from the stored values and appending the a new HTML element
 console.log(postsArray);
 
-const updateBlog = function (event) {
-   event.preventDefault();
+const updateBlog = function () {
 
    const blogContainer = document.getElementById("blog-container");
    for (let i=0; i < postsArray.length; i++) {
@@ -32,43 +38,16 @@ const updateBlog = function (event) {
          blogContainer.append(postContainer);
          
        }
-       document.body.appendChild(blogContainer);
+
+      //  Appends the whole blog container to the page 
+       document.body.main.appendChild(blogContainer);
    
 }  
 
-console.log(titleEl);
-console.log(usernameEl);
-console.log(contentEl);
-
-// Checks if any information was entered into the array first
-const checkArray = function(postsArray) {
-   if (postsArray !== '' &&  postsArray !== null) {
-      const blogPosts = [];
-
-      for (let i=0; i < postsArray.length; i++) {
-         
-         const newPost = {
-            title: postsArray[i].title,
-            username: postsArray[i].username,
-            content: postsArray[i].content,
-         };
-      blogPosts.push(newPost);
-      } 
-      updateBlog(blogPosts);
-   }   
-   else {
-      console.log("Sorry, not able to find posts in storage!");
-      return;
-   }
-};
-       
+//  calling the function
+updateBlog();
 
 
-// Gives functionality to the back button to navigate back to index.html
-const backButton = document.getElementById("back-button");
-backButton.addEventListener("click", function() {
-        document.location.href = "index.html";
-    });
 
 
 
